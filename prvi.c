@@ -37,7 +37,7 @@ int main()
 	for(i=0;i<broj_redaka;i++){
 		S[i].prosjek=(float)S[i].bodovi/max*100;
 			}
-	printf("\tIme\tPrezime\tBodovi\Prosjek\n\n");
+	printf("\tIme\tPrezime\tBodovi\tProsjek\n\n");
 	
 	for(i=0;i<broj_redaka;i++){
 		printf("%s\t %s\t %d\t %f\n ", S[i].ime, S[i].prezime, S[i].bodovi, S[i].prosjek);
