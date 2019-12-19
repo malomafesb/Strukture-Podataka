@@ -31,7 +31,6 @@ int ListDirectory(Position);
 int GarbageCollector(Position);
 #endif
 
-
 int main()
 {
 	Position root=(Position)malloc(sizeof(Tree));
@@ -93,7 +92,6 @@ int main()
 	free(name);
 	return 0;
 }
-
 Position AllocationTree()
 {
 	Position q = (Position)malloc(sizeof(Tree));
@@ -109,7 +107,6 @@ Position AllocationTree()
 
 	return q;
 }
-
 position AllocationStack()
 {
 	position q = (position)malloc(sizeof(Stack));
@@ -122,7 +119,6 @@ position AllocationStack()
 
 	return q;
 }
-
 int MakeDirectory(Position Tree, char* name)
 {
 	Position q = AllocationTree();
@@ -155,7 +151,6 @@ int MakeDirectory(Position Tree, char* name)
 	}
 	return 0;
 }
-
 Position ChangeDirectory(Position curretDir, position stack, char* name)
 {
 	Position x = curretDir->FChild;
@@ -173,7 +168,6 @@ Position ChangeDirectory(Position curretDir, position stack, char* name)
 
 	return x;
 }
-
 Position popStack(position stack)
 {
 	position tmp = stack->Next;
@@ -186,7 +180,6 @@ Position popStack(position stack)
 
 	return tmp->tree;
 }
-
 int pushStack(Position tree, position stack)
 {
 	position q = AllocationStack();
@@ -216,7 +209,6 @@ int ListDirectory(Position tree)
 
 	return 0;
 }
-
 int GarbageCollector(Position P)
 {
 	if (P == NULL)
