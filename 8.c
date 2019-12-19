@@ -31,7 +31,6 @@ int pushStack(Position, position);
 int MakeDirectory(Position, char*);
 int ListDirectory(Position);
 int GarbageCollector(Position);
-#endif
 
 int main()
 {
